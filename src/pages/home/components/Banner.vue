@@ -4,14 +4,14 @@
       <swiper :options="swiperOption">
           <!-- slides -->
           <swiper-slide>
-            <img class="swiper-img" src="@/assets/img/01.jpg" alt="">
+            <img class="swiper-img" src="@/assets/img/02.jpg" alt="">
           </swiper-slide>
           <swiper-slide>
             <img class="swiper-img" src="@/assets/img/02.jpg" alt="">
           </swiper-slide>
           <!-- Optional controls -->
           <div class="swiper-pagination"  slot="pagination"></div>
-          <div class="swiper-scrollbar"   slot="scrollbar"></div>
+          <!-- <div class="swiper-scrollbar"   slot="scrollbar"></div> -->
         </swiper>
     </div>
     <div class="banner-main">
@@ -59,7 +59,8 @@
 
 <style lang="less" scoped>
   .swiper-img{
-    width: 100%
+    display:block;
+    width: 100%;
   }
   /deep/ .swiper-pagination-bullet{
     width:15px;
@@ -70,8 +71,10 @@
   }
   .banner{
     position:relative;
-    height:800px;
-    background:#007BFF;
+    width:100%;
+    overflow: hidden;
+    height:0;
+    padding-bottom: 106.666667%;
     .banner-main{
       display:none;
       position:absolute;
@@ -86,7 +89,7 @@
         li{
           width: 25%;
           margin:0 15px;
-          box-shadow:0 5px 8px #6C757D;
+          // box-shadow:0 5px 8px #6C757D;
           a{
             i{
               color:#fff;

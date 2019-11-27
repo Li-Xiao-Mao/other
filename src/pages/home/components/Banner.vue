@@ -65,9 +65,10 @@
   /deep/ .swiper-pagination-bullet{
     width:15px;
     height:15px;
+    margin:0 5px !important;
   }
   /deep/ .swiper-pagination-bullet-active{
-    background: #fff
+    background: #fff;
   }
   .banner{
     position:relative;

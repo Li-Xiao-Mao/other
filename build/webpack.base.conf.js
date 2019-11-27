@@ -68,7 +68,11 @@ module.exports = {
       {
         test: /\.less$/,
         loader: 'style-loader!css-loader!less-loader'
-      }
+      },
+      {
+        test: /\.stylus$/,
+        loader: 'style-loader!css-loader!stylus-loader'
+      },
     ]
   },
   node: {

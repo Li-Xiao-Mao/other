@@ -3,10 +3,10 @@
     <div class="banner-container">
       <swiper :options="swiperOption">
           <swiper-slide>
-            <img class="swiper-img" src="" alt="720 x 360">
+            <img class="swiper-img" src="@/assets/img/banner/banner01.jpg" alt="720 x 360">
           </swiper-slide>
           <swiper-slide>
-            <img class="swiper-img" src="" alt="720 x 360">
+            <img class="swiper-img" src="@/assets/img/banner/banner02.jpg" alt="720 x 360">
           </swiper-slide>
           <div class="swiper-pagination"  slot="pagination"></div>
         </swiper>

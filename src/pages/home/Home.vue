@@ -3,7 +3,8 @@
     <home-header></home-header>
     <home-banner></home-banner>
     <home-sort></home-sort>
-    <!-- <home-new-sort></home-new-sort> -->
+    <home-new-sort></home-new-sort>
+    <home-footer></home-footer>
   </div>
 </template>
 
@@ -11,14 +12,16 @@
   import HomeHeader from '@/pages/home/components/Header'
   import HomeBanner from '@/pages/home/components/Banner'
   import HomeSort from '@/pages/home/components/Sort'
-  // import HomeNewSort from '@/pages/home/components/NewSort'
+  import HomeNewSort from '@/pages/home/components/NewSort'
+  import HomeFooter from '@/pages/home/components/Footer'
   export default {
     name: "Home",
     components: {
       HomeHeader,
       HomeBanner,
       HomeSort,
-      // HomeNewSort
+      HomeNewSort,
+      HomeFooter
     }
   }
 </script>

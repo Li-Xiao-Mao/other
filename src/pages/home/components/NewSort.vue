@@ -73,7 +73,6 @@
   @import '~@/assets/css/common.styl';
   .sort-box
     background:$bgColor;
-    outline:1px solid #ccc;
   .sort
     display:flex;
     overflow:hidden;
@@ -86,7 +85,6 @@
       height:0;
       padding-bottom:50%;
       background:#fff;
-      outline:1px solid #ccc;
       div
         position:absolute;
         left:50%;

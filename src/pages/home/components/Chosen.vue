@@ -1,7 +1,6 @@
 <template>
   <div class="chosen">
     <div class="chosen-title">
-      <!-- <h1>720 x 440</h1> -->
       <a href="#">
         <img class="chosen-img" src="@/assets/img/chosen/daily-picks.jpg" alt="">
       </a>
@@ -133,13 +132,13 @@
                 font-size:12px
                 transform:translateX(12px)
               .desc-buybtn
-                font-size:30px
+                font-size:26px
                 background:#ea625b
                 padding:15px
                 color:#fff
-                margin:10px 65px
+                margin:10px 14%
                 border-radius:5px
     .chosen-more
-      line-height:114px
+      line-height:86px
       text-align:center
 </style>

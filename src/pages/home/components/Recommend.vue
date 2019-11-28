@@ -1,22 +1,19 @@
 <template>
   <div class="recommend">
     <div class="recommend-left">
-      <h1>358 x 508</h1>
       <a href="#">
-        <img class="recommend-img" src="" alt="">
+        <img class="recommend-img" src="@/assets/img/recommend/recommend01.jpg" alt="358 x 508">
       </a>
     </div>
     <div class="recommend-right">
       <div class="recommend-top">
-        <h1>358 x 252</h1>
         <a href="#">
-          <img class="recommend-img" src="" alt="">
+          <img class="recommend-img" src="@/assets/img/recommend/recommend02.jpg" alt="358 x 252">
         </a>
       </div>
       <div class="recommend-bottom">
-        <h1>358 x 252</h1>
         <a href="#">
-          <img class="recommend-img" src="" alt="">
+          <img class="recommend-img" src="@/assets/img/recommend/recommend03.jpg" alt="358 x 252">
         </a>
       </div>
     </div>

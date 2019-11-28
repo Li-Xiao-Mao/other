@@ -140,6 +140,6 @@
                 margin:10px 65px
                 border-radius:5px
     .chosen-more
-      line-height:114px
+      line-height:86px
       text-align:center
 </style>

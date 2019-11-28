@@ -4,7 +4,7 @@
       <swiper :options="swiperOption">
           <!-- slides -->
           <swiper-slide>
-            <img class="swiper-img" src="@/assets/img/02.jpg" alt="">
+            <img class="swiper-img" src="@/assets/img/01.jpg" alt="">
           </swiper-slide>
           <swiper-slide>
             <img class="swiper-img" src="@/assets/img/02.jpg" alt="">

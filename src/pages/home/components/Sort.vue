@@ -6,7 +6,7 @@
             <div class="child" v-for="items of arr" :key="items.id">
               <div>
                 <a href="#">
-                  <img class="swiper-img" src="@/assets/img/02.jpg" alt="">
+                  <img class="swiper-img" src="@/assets/img/sort/sort01.jpg" alt="55 x 55">
                 </a>
                 <p>{{items.name}}</p>
               </div>

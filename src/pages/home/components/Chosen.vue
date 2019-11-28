@@ -29,6 +29,11 @@
         </li>
       </ul>
     </div>
+    <div class="chosen-more border-top">
+      <a href="#">
+        <p>More Featured Products<i> > </i></p>
+      </a>
+    </div>
   </div>
 </template>
 
@@ -134,4 +139,7 @@
                 color:#fff
                 margin:10px 65px
                 border-radius:5px
+    .chosen-more
+      line-height:114px
+      text-align:center
 </style>

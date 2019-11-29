@@ -7,6 +7,7 @@
     <home-chosen></home-chosen>
     <!-- <home-new-sort></home-new-sort> -->
     <home-cells-recommend></home-cells-recommend>
+    <home-chosen-one></home-chosen-one>
   </div>
 </template>
 
@@ -18,6 +19,7 @@
   import HomeChosen from '@/pages/home/components/Chosen'
   // import HomeNewSort from '@/pages/home/components/NewSort'
   import HomeCellsRecommend from '@/pages/home/components/CellsRecommend'
+  import HomeChosenOne from '@/pages/home/components/ChosenOne'
   export default {
     name: "Home",
     components: {
@@ -27,7 +29,8 @@
       HomeRecommend,
       HomeChosen,
       // HomeNewSort
-      HomeCellsRecommend
+      HomeCellsRecommend,
+      HomeChosenOne
     }
   }
 </script>

@@ -2,7 +2,44 @@
   <div class="footer">
     <ul class="clearfix">
       <li>
-        <p>Home</p>
+        <div class="icons">
+          <a href="#">
+            <img class="footer-img" src="@/assets/img/footer/home.png" alt="">
+          </a>
+        </div>
+        <p>首页</p>
+      </li>
+      <li>
+        <div class="icons">
+          <a href="#">
+            <img class="footer-img" src="@/assets/img/footer/home.png" alt="">
+          </a>
+        </div>
+        <p>分类</p>
+      </li>
+      <li>
+        <div class="icons">
+          <a href="#">
+            <img class="footer-img" src="@/assets/img/footer/home.png" alt="">
+          </a>
+        </div>
+        <p>通知</p>
+      </li>
+      <li>
+        <div class="icons">
+          <a href="#">
+            <img class="footer-img" src="@/assets/img/footer/home.png" alt="">
+          </a>
+        </div>
+        <p>购物车</p>
+      </li>
+      <li>
+        <div class="icons">
+          <a href="#">
+            <img class="footer-img" src="@/assets/img/footer/home.png" alt="">
+          </a>
+        </div>
+        <p>我的</p>
       </li>
     </ul>
   </div>
@@ -15,24 +52,30 @@
 </script>
 
 <style lang="stylus" scoped>
-  @import '~@/assets/css/common.styl';
+  @import '~@/assets/css/common.styl'
   .footer
-    position:fixed;
+    position:fixed
     left:0
     bottom:0
     width:100%
-    height:86px
-    background:#000
+    background:$bgColor
     z-index:9999
     ul
       li
-        position:relative
         float:left
         width:20%
-        height:86px
-        line-height:86px
         text-align:center
+        padding:15px 0 10px
+        .icons
+          width:55px
+          height:55px
+          margin:0 auto
+          // background:#fff
+          a>.footer-img
+            display:block
+            width:100%
         p
           font-size:12px
           color:#fff
+          margin-top:15px
 </style>

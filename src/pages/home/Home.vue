@@ -3,7 +3,7 @@
     <home-header></home-header>
     <home-banner></home-banner>
     <home-sort></home-sort>
-    <home-new-sort></home-new-sort>
+    <!-- <home-new-sort></home-new-sort> -->
     <home-footer></home-footer>
     <home-recommend></home-recommend>
     <home-chosen></home-chosen>
@@ -17,7 +17,7 @@
   import HomeFooter from '@/pages/home/components/Footer'
   import HomeRecommend from '@/pages/home/components/Recommend'
   import HomeChosen from '@/pages/home/components/Chosen'
-  import HomeNewSort from '@/pages/home/components/NewSort'
+  // import HomeNewSort from '@/pages/home/components/NewSort'
   export default {
     name: "Home",
     components: {
@@ -27,7 +27,7 @@
       HomeFooter,
       HomeRecommend,
       HomeChosen,
-      HomeNewSort
+      // HomeNewSort
     }
   }
 </script>

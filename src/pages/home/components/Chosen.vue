@@ -88,6 +88,7 @@
           float:left
           width:50%
           box-sizing:border-box
+          background:#fff
           &:nth-child(odd)
             >div
               padding-right:5px
@@ -141,4 +142,5 @@
     .chosen-more
       line-height:86px
       text-align:center
+      background:#fff
 </style>

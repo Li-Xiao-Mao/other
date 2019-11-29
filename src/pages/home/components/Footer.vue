@@ -70,8 +70,7 @@
           width:55px
           height:55px
           margin:0 auto
-          // background:#fff
-          a>.footer-img
+          a >.footer-img
             display:block
             width:100%
         p

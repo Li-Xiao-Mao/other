@@ -2,11 +2,10 @@
   <div class="banner">
     <div class="banner-container">
       <swiper :options="swiperOption">
-          <swiper-slide>
-            <img class="swiper-img" src="@/assets/img/banner/banner01.jpg" alt="720 x 360">
-          </swiper-slide>
-          <swiper-slide>
-            <img class="swiper-img" src="@/assets/img/banner/banner02.jpg" alt="720 x 360">
+          <swiper-slide v-for="items of BannerImg" :key="items.id">
+            <a href="#">
+              <img class="swiper-img" :src="items.url" alt="720 x 360">
+            </a>
           </swiper-slide>
           <div class="swiper-pagination"  slot="pagination"></div>
         </swiper>
@@ -17,6 +16,11 @@
 <script>
   export default {
     name: "Banner",
+    props:{
+      BannerImg:{
+        type:Array
+      }
+    },
     data() {
       return {
         swiperOption:{
@@ -28,7 +32,7 @@
             disableOnInteraction: true
           },
           speed: 1000,
-          loop: true,
+          loop: true
         }
       }
     }

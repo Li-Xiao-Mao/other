@@ -1,11 +1,14 @@
 <template>
   <div class="header-all">
-    <div class="header-navList">
-      <i class="iconfont iconliebiao"></i>
+    <div class="header-logo">
+      <a href="#">
+        See the world
+      </a>
     </div>
-    <div class="header-logo">WINSTARS</div>
     <div class="header-search">
-      <i class="iconfont iconsousuo"></i>
+      <a href="#">
+        <i class="iconfont iconsousuo"> Search Product Name</i>
+      </a>
     </div>
   </div>
 </template>
@@ -23,25 +26,31 @@
     height: 86px;
     line-height: 86px;
     background: #3b6caa;
-    .header-navList{
-      margin:0 20px;
+    .header-logo {
       color: #fff;
+      margin: 0 40px;
       text-align: center;
-      i{
-        font-size:56px
+      a{
+        font-size:28px;
+        color:#fff;
       }
     }
-    .header-logo {
-      flex: 1;
-      color: #fff;
-      text-align: center
-    }
     .header-search {
-      margin: 0 40px;
-      color: #fff;
-      text-align: center;
+      flex: 1;
+      position:relative;
+      background:#fff;
+      height:66px;
+      line-height:66px;
+      margin-top:10px;
+      margin-right:20px;
+      border-radius:5px;
       i{
-        font-size: 35px
+        position:absolute;
+        left:15px;
+        top:50%;
+        transform:translateY(-50%);
+        font-size: 30px;
+        color:rgba(0,0,0,.3)
       }
     }
   }

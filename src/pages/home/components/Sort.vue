@@ -5,9 +5,9 @@
           <div class="sort clearfix">
             <div class="child" v-for="items of arr" :key="items.id">
               <div>
-                <a href="#">
-                  <img class="swiper-img" src="@/assets/img/sort/sort01.jpg" alt="55 x 55">
-                </a>
+                <router-link :to="items.link">
+                  <img class="swiper-img" :src="items.imgUrl" alt="55 x 55">
+                </router-link>
                 <p>{{items.name}}</p>
               </div>
             </div>
@@ -21,55 +21,13 @@
 <script>
   export default {
     name: "Sort",
+    props:{
+      SortInfo:{
+        type: Array
+      }
+    },
     data (){
       return {
-        List:[
-          {
-            id:"001",
-            imgUrl:"",
-            name:"Mesh Router"
-          },
-          {
-            id:"002",
-            imgUrl:"",
-            name:"Router"
-          },
-          {
-            id:"003",
-            imgUrl:"",
-            name:"LTE"
-          },
-          {
-            id:"004",
-            imgUrl:"",
-            name:"Repeater"
-          },
-          {
-            id:"005",
-            imgUrl:"",
-            name:"Outdoor AP"
-          },
-          {
-            id:"006",
-            imgUrl:"",
-            name:"Wireless AV"
-          },
-          {
-            id:"007",
-            imgUrl:"",
-            name:"USB Adapter"
-          },
-          {
-            id:"008",
-            imgUrl:"",
-            name:"Powerline Kit"
-          },
-          {
-            id:"009",
-            imgUrl:"",
-            name:"Smart Light"
-          }
-        ],
         swiperOption:{
           pagination: {
             el: ".swiper-pagination",
@@ -78,17 +36,16 @@
       }
     },
     computed:{
-      pages (){
-        let newArr = [];
-        this.List.forEach((item, index) => {
-          // 返回小于或者等于指定值的最大整数
-          let n = Math.floor( index / 8 );
-          if(!newArr[n]){
-            newArr[n] = []
+      pages () {
+        let page = [];
+        this.SortInfo.forEach((item, index) => {
+          let n = Math.floor(index/8);
+          if(!page[n]){
+            page[n] = []
           };
-          newArr[n].push(item);
+          page[n].push(item);
         })
-        return newArr;
+        return page;
       }
     }
   }

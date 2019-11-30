@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <home-header></home-header>
-    <home-banner></home-banner>
-    <home-sort></home-sort>
+    <home-banner :BannerImg="BannerImg"></home-banner>
+    <home-sort :SortInfo="SortInfo"></home-sort>
     <home-recommend></home-recommend>
     <home-chosen></home-chosen>
     <!-- <home-new-sort></home-new-sort> -->
@@ -12,6 +12,7 @@
 </template>
 
 <script>
+  import axios from 'axios'
   import HomeHeader from '@/pages/home/components/Header'
   import HomeBanner from '@/pages/home/components/Banner'
   import HomeSort from '@/pages/home/components/Sort'
@@ -31,6 +32,30 @@
       // HomeNewSort
       HomeCellsRecommend,
       HomeChosenOne
+    },
+    data () {
+      return {
+        BannerImg:[],
+        SortInfo:[]
+      }
+    },
+    methods: {
+      getDataInfo () {
+        axios.get("/api/index.json")
+          .then(this.datainfoSuccess)
+      },
+      datainfoSuccess (res) {
+        console.log(res.data);
+        let Res = res.data;
+        if(Res.ret && res.data){
+          let data = res.data;
+          this.BannerImg = data.BannerImg;
+          this.SortInfo = data.SortList
+        }
+      }
+    },
+    mounted () {
+      this.getDataInfo()
     }
   }
 </script>

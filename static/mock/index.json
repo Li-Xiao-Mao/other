@@ -1,0 +1,69 @@
+{
+  "ret":true,
+  "BannerImg":[
+    {
+      "id":"01",
+      "url":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/0d8d81e5ee47f01a1cc3b83835323fb6.jpg?thumb=1&w=720&h=360"
+    },
+    {
+      "id":"02",
+      "url":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/637a9747f273c65860575a228fb8a9b7.jpg?thumb=1&w=720&h=360"
+    }
+  ],
+  "SortList":[
+    {
+      "id":"001",
+      "imgUrl":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/bc1c677a6e10e42d00fb0a063662fbf9.png?thumb=1&w=144&h=152",
+      "name":"All",
+      "link":"/all"
+    },
+    {
+      "id":"002",
+      "imgUrl":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/bc1c677a6e10e42d00fb0a063662fbf9.png?thumb=1&w=144&h=152",
+      "name":"Router",
+      "link":""
+    },
+    {
+      "id":"003",
+      "imgUrl":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/bc1c677a6e10e42d00fb0a063662fbf9.png?thumb=1&w=144&h=152",
+      "name":"LTE",
+      "link":""
+    },
+    {
+      "id":"004",
+      "imgUrl":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/bc1c677a6e10e42d00fb0a063662fbf9.png?thumb=1&w=144&h=152",
+      "name":"Repeater",
+      "link":""
+    },
+    {
+      "id":"005",
+      "imgUrl":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/bc1c677a6e10e42d00fb0a063662fbf9.png?thumb=1&w=144&h=152",
+      "name":"Outdoor AP",
+      "link":""
+    },
+    {
+      "id":"006",
+      "imgUrl":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/bc1c677a6e10e42d00fb0a063662fbf9.png?thumb=1&w=144&h=152",
+      "name":"Wireless AV",
+      "link":""
+    },
+    {
+      "id":"007",
+      "imgUrl":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/bc1c677a6e10e42d00fb0a063662fbf9.png?thumb=1&w=144&h=152",
+      "name":"USB Adapter",
+      "link":""
+    },
+    {
+      "id":"008",
+      "imgUrl":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/bc1c677a6e10e42d00fb0a063662fbf9.png?thumb=1&w=144&h=152",
+      "name":"Powerline Kit",
+      "link":""
+    },
+    {
+      "id":"009",
+      "imgUrl":"//cdn.cnbj1.fds.api.mi-img.com/mi-mall/bc1c677a6e10e42d00fb0a063662fbf9.png?thumb=1&w=144&h=152",
+      "name":"Smart Light",
+      "link":""
+    }
+  ]
+}

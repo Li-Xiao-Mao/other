@@ -51,56 +51,52 @@
   }
 </script>
 
-<style lang="less" scoped>
-  .sort-box{
-    background: #3b6caa;
-  }
-  /deep/ .swiper-pagination-bullet{
-    width:25px;
-    height:5px;
-    border-radius:0;
-    margin:0 5px !important;
-  }
-  /deep/ .swiper-pagination-bullet-active{
-    background: #fff;
-  }
-  .sort{
-    overflow:hidden;
-    max-width:100%;
-    height: 0;
-    padding-bottom: 50%;
-    .child{
-      float: left;
-      position:relative;
-      width: 25%;
-      overflow:hidden;
-      height:0;
-      padding-bottom: 25%;
-      text-align: center;
-      div{
-        position:absolute;
-        left:50%;
-        top:50%;
-        width:100%;
-        transform:translate(-50%, -50%);
-        a{
-          display:block;
-          width: 50%;
-          margin:0 auto;
-          overflow:hidden;
-          height:0;
-          padding-bottom:50%;
-          border-radius:15px;
-         .swiper-img{
-           width: 100%;
-         }
-        }
-        p{
-          font-size: 18px;
-          margin-top: 10px;
+<style lang="stylus" scoped>
+  @import '~@/assets/css/mixins.styl'
+  .sort-box
+    background: #3b6caa
+  .sort-box >>> .swiper-pagination-bullet
+    width:25px
+    height:5px
+    line-height:5px
+    border-radius:0
+    margin:0 5px 8px !important
+  .sort-box >>> .swiper-pagination-bullet-active
+    background: #fff
+  .sort-box >>> .swiper-pagination
+    position:static
+  .sort
+    overflow:hidden
+    max-width:100%
+    height: 0
+    padding-bottom: 50%
+    .child
+      float: left
+      position:relative
+      width: 25%
+      overflow:hidden
+      height:0
+      padding-bottom: 25%
+      text-align: center
+      div
+        position:absolute
+        left:50%
+        top:50%
+        width:100%
+        transform:translate(-50%, -50%)
+        a
+          display:block
+          width: 50%
+          margin:0 auto
+          overflow:hidden
+          height:0
+          padding-bottom:50%
+          border-radius:15px
+         .swiper-img
+           width: 100%
+        p
+          font-size: 18px
+          margin:10px 15px 0
           color: #fff
-        }
-      }
-    }
-  }
+          elipsis()
 </style>

@@ -1,18 +1,18 @@
 <template>
   <div class="chosen">
     <div class="chosen-title">
-      <a href="#">
+      <router-link to="/details">
         <img class="chosen-img" src="@/assets/img/chosen/daily-picks.jpg" alt="">
-      </a>
+      </router-link>
     </div>
     <div class="chosen-list">
       <ul class="clearfix">
       	<li v-for="items of priceList" :key="items.id">
           <div>
             <div class="img">
-              <a href="#">
+              <router-link to="/details">
                 <img class="chosen-img" src="@/assets/img/chosen/01.jpg" alt="344 x 280">
-              </a>
+              </router-link>
             </div>
             <div class="desc">
               <div class="desc-title">{{items.title}}</div>
@@ -22,7 +22,9 @@
                 <span>from</span>
                 <span class="original-price"><s>1299</s></span>
               </div>
-              <div class="desc-buybtn">Buybtn Mauto</div>
+              <div class="desc-buybtn">
+                <router-link to="/details">Buybtn Mauto</router-link>
+              </div>
             </div>
           </div>
         </li>
@@ -118,6 +120,7 @@
               .desc-price
                 font-size:30px
                 color:red
+                elipsis()
                 span
                   font-size:12px
                 .original-price
@@ -136,9 +139,10 @@
                 font-size:26px
                 background:#ea625b
                 padding:15px
-                color:#fff
                 margin:10px 14%
                 border-radius:5px
+                a
+                  color:#fff
     .chosen-more
       line-height:86px
       text-align:center

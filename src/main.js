@@ -8,6 +8,7 @@ import fastClick from 'fastclick'
 import '@/assets/css/reset.css'
 import '@/assets/css/border.css'
 import 'swiper/dist/css/swiper.css'
+import '../libs/rem.js'
 
 Vue.config.productionTip = false
 fastClick.attach(document.body)

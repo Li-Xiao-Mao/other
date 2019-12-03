@@ -39,22 +39,18 @@
   }
 </script>
 
-<style lang="less" scoped>
-  .swiper-img{
-    display:block;
-    width: 100%;
-  }
-  /deep/ .swiper-slide{
-    overflow: hidden;
-    height:0;
-    padding-bottom: 50%;
-  }
-  /deep/ .swiper-pagination-bullet{
-    width:15px;
-    height:15px;
-    margin:0 5px !important;
-  }
-  /deep/ .swiper-pagination-bullet-active{
-    background: #fff;
-  }
+<style lang="stylus" scoped>
+  .banner >>> .swiper-slide
+    overflow: hidden
+    height:0
+    padding-bottom: 50%
+    .swiper-img
+      display:block
+      width: 100%
+  .banner >>> .swiper-pagination-bullet
+    width:15px
+    height:15px
+    margin:0 5px !important
+  .banner >>> .swiper-pagination-bullet-active
+    background: #fff
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="key-parameter">
     <swiper :options="swiperOption">
-      <swiper-slide v-for="items of keyParameter">
+      <swiper-slide v-for="items of keyParameter" :key="items.id">
         <div class="parameter-content">
           <img class="key-parameter-img" :src="items.imgUrl" alt="">
           <div class="key-parameter-name">{{items.name}}</div>

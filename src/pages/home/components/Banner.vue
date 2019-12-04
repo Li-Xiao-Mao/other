@@ -40,7 +40,7 @@
 </script>
 
 <style lang="stylus" scoped>
-  .banner >>> .swiper-slide
+  .banner >>> .swiper-container
     overflow: hidden
     height:0
     padding-bottom: 50%

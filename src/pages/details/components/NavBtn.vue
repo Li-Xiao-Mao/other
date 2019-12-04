@@ -24,9 +24,9 @@
     p
       i
         display:block
-        width:65px
-        height:65px
-        line-height:65px
+        width:75px
+        height:75px
+        line-height:75px
         text-align:center
         border-radius:50%
         background:rgba(0,0,0,.6)

@@ -2,19 +2,29 @@
   <div class="banner">
      <swiper :options="swiperOption">
         <swiper-slide>
-          <img class="banner-img" src="//files.win-star.com/images/2019/10/11/WN551K1-K2-K3_1.jpg" alt="">
+          <div>
+            <img class="banner-img" src="@/assets/img/Details/banner/banner01.jpg" alt="">
+          </div>
         </swiper-slide>
         <swiper-slide>
-          <img class="banner-img" src="//files.win-star.com/images/2019/10/11/WN551K1-K2-K3_2.jpg" alt="">
+          <div>
+            <img class="banner-img" src="@/assets/img/Details/banner/banner02.jpg" alt="">
+          </div>
         </swiper-slide>
         <swiper-slide>
-          <img class="banner-img" src="//files.win-star.com/images/2019/10/11/WN551K1-K2-K3_3.jpg" alt="">
+          <div>
+            <img class="banner-img" src="@/assets/img/Details/banner/banner03.jpg" alt="">
+          </div>
         </swiper-slide>
         <swiper-slide>
-          <img class="banner-img" src="//files.win-star.com/images/2019/10/11/WN551K1-K2-K3_4.jpg" alt="">
+          <div>
+            <img class="banner-img" src="@/assets/img/Details/banner/banner04.jpg" alt="">
+          </div>
         </swiper-slide>
         <swiper-slide>
-          <img class="banner-img" src="//files.win-star.com/images/2019/10/11/WN551K1-K2-K3_5.jpg" alt="">
+          <div>
+            <img class="banner-img" src="@/assets/img/Details/banner/banner05.jpg" alt="">
+          </div>
         </swiper-slide>
         <div class="swiper-pagination"  slot="pagination"></div>
       </swiper>
@@ -26,7 +36,16 @@
     name: "Banner",
     data () {
       return {
-        swiperOption:{}
+        swiperOption:{
+          loop:true,
+          speed:1000,
+          pagination: {
+            el: '.swiper-pagination'
+          },
+          autoplay: {
+            
+          }
+        }
       }
     }
   }

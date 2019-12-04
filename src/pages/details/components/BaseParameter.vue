@@ -2,9 +2,9 @@
   <div class="base-parameter">
     <div class="activity">
       <p class="activity-spike">
-        秒杀价<span>1499</span>
+        Price Spike<span>1499</span>
       </p>
-      <span class="activity-date">距结束 06:35:26</span>
+      <span class="activity-date">End of distance 06:35:26</span>
     </div>
     <div class="base-parameter-title">AC3000 Tri-Band MU-MIMO Gigabit Smart Mesh WiFi System with Patented TouchLink Technology</div>
     <div class="base-parameter-desc">
@@ -45,12 +45,13 @@
         color:#fff
         span
           position:relative
-          padding-left:30px
+          padding-left:20px
           &:before
             content:"￥"
             position:absolute
             left:0
             top:50%
+            font-size:14px
             transform:translateY(-50%)
       .activity-date
         font-size:24px
@@ -69,14 +70,16 @@
       div
         position:relative
         font-size:48px
-        padding-left:40px
+        padding-left:30px
         color:#ff6700
         &:before
           content:"￥"
           display:block
           position:absolute
           left:0
-          top:0
+          top:50%
+          font-size:35px
+          transform:translateY(-50%)
         span
           position:relative
           color:rgba(0,0,0,.54)

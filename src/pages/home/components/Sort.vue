@@ -53,8 +53,10 @@
 
 <style lang="stylus" scoped>
   @import '~@/assets/css/mixins.styl'
-  .sort-box
+  .sort-box >>> .swiper-container
     background: #3b6caa
+    height:0
+    padding-bottom:54.2666667%
   .sort-box >>> .swiper-pagination-bullet
     width:25px
     height:5px
@@ -63,13 +65,13 @@
     margin:0 5px 8px !important
   .sort-box >>> .swiper-pagination-bullet-active
     background: #fff
-  .sort-box >>> .swiper-pagination
-    position:static
-  .sort
-    overflow:hidden
-    max-width:100%
-    height: 0
-    padding-bottom: 50%
+  // .sort-box >>> .swiper-pagination
+  //   position:static
+  // .sort
+  //   overflow:hidden
+  //   max-width:100%
+  //   height: 0
+  //   padding-bottom: 50%
     .child
       float: left
       position:relative

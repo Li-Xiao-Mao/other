@@ -5,6 +5,7 @@
     <!-- <details-activity></details-activity> -->
     <details-base-parameter></details-base-parameter>
     <details-key-parameter></details-key-parameter>
+    <details-footer></details-footer>
   </div>
 </template>
 
@@ -14,6 +15,7 @@
   // import DetailsActivity from '@/pages/details/components/Activity'
   import DetailsBaseParameter from '@/pages/details/components/BaseParameter'
   import DetailsKeyParameter from '@/pages/details/components/KeyParameter'
+  import DetailsFooter from '@/pages/details/components/Footer'
   export default {
     name: "Details",
     components: {
@@ -21,7 +23,8 @@
       DetailsBanner,
       // DetailsActivity,
       DetailsBaseParameter,
-      DetailsKeyParameter
+      DetailsKeyParameter,
+      DetailsFooter
     }
   }
 </script>

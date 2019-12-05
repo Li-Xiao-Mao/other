@@ -45,7 +45,6 @@
           .then(this.datainfoSuccess)
       },
       datainfoSuccess (res) {
-        console.log(res.data);
         let Res = res.data;
         if(Res.ret && res.data){
           let data = res.data;

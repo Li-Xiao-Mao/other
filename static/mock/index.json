@@ -65,5 +65,37 @@
       "name":"Smart Light",
       "link":""
     }
+  ],
+  "DetailsList": [
+	  {
+		  "id":"001",
+      "thumbnail": "//files.win-star.com/images/2019/09/23/WN551K3.jpg",
+      "imgUrl": [
+        "//files.win-star.com/images/2019/10/11/WN551K1-K2-K3_1.jpg",
+        "//files.win-star.com/images/2019/10/11/WN551K1-K2-K3_2.jpg",
+        "//files.win-star.com/images/2019/10/11/WN551K1-K2-K3_3.jpg",
+        "//files.win-star.com/images/2019/10/11/WN551K1-K2-K3_4.jpg",
+        "//files.win-star.com/images/2019/10/11/WN551K1-K2-K3_5.jpg"
+      ],
+      "activitySpike": "3200",
+		  "name": "AC3000 Tri-Band MU-MIMO Gigabit Smart Mesh WiFi System with Patented TouchLink Technology",
+      "desc": "Every Corner Covered / Insanely Fast / Smart and Simple / Mesh Wi-Fi System / Patent Touchlink Technology/ Beamforming Technology / Eight High-performance Antennas / Blazing-fast Wired Performance /Elegant Design / Large Coverage",
+      "price": "3200"
+    },
+	  {
+      "id":"002",
+      "thumbnail": "//files.win-star.com/images/2019/09/23/WN552K3.jpg",
+      "imgUrl": [
+        "//files.win-star.com/images/2019/09/23/WS-WN552K3_1.jpg",
+        "//files.win-star.com/images/2019/09/23/WS-WN552K3_2.jpg",
+        "//files.win-star.com/images/2019/09/23/WS-WN552K3_3.jpg",
+        "//files.win-star.com/images/2019/09/23/WS-WN552K3_4.jpg",
+        "//files.win-star.com/images/2019/09/23/WS-WN552K3_5.jpg"
+      ],
+      "activitySpike": "2400",
+      "name": "AC2100 Dual-Band MU-MIMO Gigabit Whole Home Mesh WiFi System with TouchLink",
+      "desc": "Every Corner Covered / Unparalleled Wi-Fi Speed for You / Smart and Simple / Different from Traditional Router / Patent Touchlink Technology / Beamforming Technology / Six High-performance Antennas / Blazing-fast Wireless Performance / Elegant Design / Large Coverage",
+      "price": "2400"
+    }
   ]
 }

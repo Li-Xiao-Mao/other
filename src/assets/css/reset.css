@@ -1,5 +1,10 @@
 /* Clear the default style */
 
+@font-face {
+  font-family: NeoSans;
+  src: url(/src/assets/css/fonts/NeoSans/Neo_Sans.ttf);
+}
+
 html, body, div, span, applet, object, iframe,
  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
  a, abbr, acronym, address, big, cite, code,
@@ -65,7 +70,7 @@ table{
  }
  html, body{
    width: 100%;
-   font-family: "Arial", "Microsoft YaHei",
+   font-family: NeoSans, "Arial", "Microsoft YaHei",
    "黑体", "宋体", "微软雅黑", sans-serif;
  }
  body{

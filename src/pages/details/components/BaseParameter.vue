@@ -7,7 +7,7 @@
       <span class="activity-date">End of distance 06:35:26</span>
     </div>
     <div class="base-parameter-title">AC3000 Tri-Band MU-MIMO Gigabit Smart Mesh WiFi System with Patented TouchLink Technology</div>
-    <div class="promotion-title">"6GB + 128GB is reduced by 200 yuan, and the purchase price is only 1299 yuan. The purchase of the machine enjoys 6 installments of interest-free, and the mobile phone comes with a protective case. The color of the protective case can be selected from one of three."</div>
+    <div class="promotion-title" v-if="false">"6GB + 128GB is reduced by 200 yuan, and the purchase price is only 1299 yuan. The purchase of the machine enjoys 6 installments of interest-free, and the mobile phone comes with a protective case. The color of the protective case can be selected from one of three."</div>
     <div class="base-parameter-desc">
       Every Corner Covered / Insanely Fast / Smart and Simple / Mesh Wi-Fi System / Patent Touchlink Technology
       / Beamforming Technology / Eight High-performance Antennas / Blazing-fast Wired Performance /

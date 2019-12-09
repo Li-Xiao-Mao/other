@@ -5,6 +5,7 @@
     <!-- <details-activity></details-activity> -->
     <details-base-parameter></details-base-parameter>
     <details-key-parameter></details-key-parameter>
+    <section-detail></section-detail>
     <details-footer></details-footer>
   </div>
 </template>
@@ -16,6 +17,7 @@
   import DetailsBaseParameter from '@/pages/details/components/BaseParameter'
   import DetailsKeyParameter from '@/pages/details/components/KeyParameter'
   import DetailsFooter from '@/pages/details/components/Footer'
+  import SectionDetail from '@/pages/details/components/SectionDetail'
   export default {
     name: "Details",
     components: {
@@ -24,10 +26,13 @@
       // DetailsActivity,
       DetailsBaseParameter,
       DetailsKeyParameter,
-      DetailsFooter
+      DetailsFooter,
+      SectionDetail
     }
   }
 </script>
 
-<style>
+<style lang="stylus" scoped>
+  .details
+    padding-bottom: 150px
 </style>

@@ -1,14 +1,14 @@
 <template>
   <div class="sort-box">
     <swiper :options="swiperOption">
-        <swiper-slide v-for="(arr, index) of pages" :key="index">
+        <swiper-slide v-for="" :key="">
           <div class="sort clearfix">
-            <div class="child" v-for="items of arr" :key="items.id">
+            <div class="child" v-for="">
               <div>
-                <router-link :to="items.link">
-                  <img class="swiper-img" :src="items.imgUrl" alt="55 x 55">
+                <router-link to="">
+                  <img class="swiper-img" src="" alt="55 x 55">
                 </router-link>
-                <p>{{items.name}}</p>
+                <p></p>
               </div>
             </div>
           </div>
@@ -21,11 +21,11 @@
 <script>
   export default {
     name: "Sort",
-    props:{
-      SortInfo:{
-        type: Array
-      }
-    },
+    // props:{
+    //   SortInfo:{
+    //     type: Array
+    //   }
+    // },
     data (){
       return {
         swiperOption:{
@@ -35,19 +35,19 @@
         }
       }
     },
-    computed:{
-      pages () {
-        let page = [];
-        this.SortInfo.forEach((item, index) => {
-          let n = Math.floor(index/8);
-          if(!page[n]){
-            page[n] = []
-          };
-          page[n].push(item);
-        })
-        return page;
-      }
-    }
+    // computed:{
+    //   pages () {
+    //     let page = [];
+    //     this.SortInfo.forEach((item, index) => {
+    //       let n = Math.floor(index/8);
+    //       if(!page[n]){
+    //         page[n] = []
+    //       };
+    //       page[n].push(item);
+    //     })
+    //     return page;
+    //   }
+    // }
   }
 </script>
 

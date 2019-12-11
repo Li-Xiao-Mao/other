@@ -1,0 +1,91 @@
+{
+  "ret": true,
+  "data": {
+    "bannerImg": [
+      {
+        "id":"001",
+        "url": "/static/img/home/banner/banner01.jpg"
+      },
+      {
+        "id":"002",
+        "url": "/static/img/home/banner/banner02.jpg"
+      }
+    ],
+    "Recommend": [
+      "/static/img/home/recommend/recommend01.jpg",
+      "/static/img/home/recommend/recommend02.jpg",
+      "/static/img/home/recommend/recommend03.jpg"
+    ],
+    "chosenTitle": "/static/img/home/chosen/01.jpg",
+    "chosenList": [
+      {
+        "id": "001",
+        "url": "/static/img/home/chosen/02.jpg",
+        "title": "AC3000 Tri-Band MU-MIMO Gigabit Smart Mesh WiFi System with Patented TouchLink Technology",
+        "desc": "This mesh Wi-Fi system is built to connect with each other in a sin gle network configuration. It will choose the best path for Wi-Fi connections and keeps every device enjoying the fastest speed. Once one node loses connection, the remaining units will reestablish Internet connection automatically and seamlessly.",
+        "orig": "3200",
+        "price": "3500"
+      },
+      {
+        "id": "002",
+        "url": "/static/img/home/chosen/03.jpg",
+        "title": "AC2100 Dual-Band MU-MIMO Gigabit Whole Home Mesh WiFi System with TouchLink",
+        "desc": "This mesh Wi-Fi system is built to connect with each other in a single network configuration. It will choose the best path for Wi-Fi connections and keeps every device enjoying the fastest speed. Once one node loses connection, the remaining units will reestablish Internet connection automatically and seamlessly.",
+        "orig": "3200",
+        "price": "3000"
+      },
+      {
+        "id": "003",
+        "url": "/static/img/home/chosen/04.jpg",
+        "title": "AC1200 Dual-Band Gigabit Whole Home Mesh WiFi System with TouchLink",
+        "desc": "Whole home mesh Wi-Fi system for a fast reliable WiFi signal. Utilizing beamforming technology, this AC1200 mesh Wi-Fi system with four high-gain antennas offer a solid, unified WiFi network no matter where you are. It’s a better solution than a traditional wireless router and extenders.",
+        "orig": "2750",
+        "price": "2500"
+      },
+      {
+        "id": "004",
+        "url": "/static/img/home/chosen/05.jpg",
+        "title": "AC1200 Dual-Band Gigabit Whole Home Mesh WiFi System with TouchLink",
+        "desc": "Whole home mesh Wi-Fi system for a fast reliable WiFi signal. Utilizing beamforming technology, this AC1200 mesh Wi-Fi system with four high-gain antennas offer a solid, unified WiFi network no matter where you are. It’s a better solution than a traditional wireless router and extenders.",
+        "orig": "2650",
+        "price": "2550"
+      }
+    ],
+    "cellsRecommend": "/static/img/home/cells-recommend/cells-recommend-01.jpg",
+    "chosenTitleOne": "/static/img/home/chosen-one/01.jpg",
+    "chosenListOne": [
+      {
+        "id": "001",
+        "url": "/static/img/home/chosen-one/02.jpg",
+        "title": "Thunderbolt™ 3 Titan USB-C Dual 4K Docking Station with Power Delivery",
+        "desc": "You can connect to your Windows or Mac OS X computer with a single Thunderbolt™ 3 (USB-C) cable offering you incredibly high-speed online experience. Five USB downstream ports in total to expand more USB devices connectivity.",
+        "orig": "3200",
+        "price": "3500"
+      },
+      {
+        "id": "002",
+        "url": "/static/img/home/chosen-one/03.jpg",
+        "title": "Thunderbolt™ 3 4K Docking Station with Power Delivery",
+        "desc": "With this unprecedented speed, you can continuously transfer large files to external backup storage or retrieve data from other storage devices quickly without compromising bandwidth from your 4K displays.",
+        "orig": "3200",
+        "price": "3000"
+      },
+      {
+        "id": "003",
+        "url": "/static/img/home/chosen-one/04.jpg",
+        "title": "Thunderbolt™ 3 to Dual DisplayPort Mini Dock",
+        "desc": "It turns one Thunderbolt™ 3 USB-C port into dual DisplayPort displays, Gigabit Ethernet and USB 3.0 Port and does more with your computer. This mini dock enables connection of dual 4K DisplayPort displays at 60Hz, or one 5K display at 60Hz.",
+        "orig": "2750",
+        "price": "2500"
+      },
+      {
+        "id": "004",
+        "url": "/static/img/home/chosen-one/05.jpg",
+        "title": "Thunderbolt™ 3 to NVMe SSD, Portable PCIe NVME SSD Hard Drive",
+        "desc": "If you’re looking for a fast SSD drive that won’t break the bank, this Thunderbolt™ 3 Hard Drive would be the best option for you. It allows you to use as a working, easily portable drive on a smaller project, so just bring it anywhere you want to meet your needs.",
+        "orig": "2650",
+        "price": "2550"
+      }
+    ]
+  }
+}

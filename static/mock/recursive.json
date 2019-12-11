@@ -1,0 +1,147 @@
+{
+  "ret": true,
+  "data": {
+    "recursive": [
+      {
+        "title": "成人票",
+        "children": [
+          {
+            "title": "青年票",
+            "children": [
+              {
+                "title": "价格：650元/天"
+              }
+            ]
+          },
+          {
+            "title": "中年票",
+            "children": [
+              {
+                "title": "价格：680元/天"
+              }
+            ]
+          },
+          {
+            "title": "老年票",
+            "children": [
+              {
+                "title": "优惠价格：360元/天"
+              }
+            ]
+          },
+          {
+            "title": "未知票",
+            "children": [
+              {
+                "title": "未知价格：？元/天"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "学生票",
+        "children": [
+          {
+            "title": "学哥票",
+            "children": [
+              {
+                "title": "价格：530元/天"
+              }
+            ]
+          },
+          {
+            "title": "学姐票",
+            "children": [
+              {
+                "title": "价格：450元/天"
+              }
+            ]
+          },
+          {
+            "title": "学弟票",
+            "children": [
+              {
+                "title": "价格：450元/天"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "团体票",
+        "children": [
+          {
+            "title": "3人团票",
+            "children": [
+              {
+                "title": "优惠价：1050元/天"
+              }
+            ]
+          },
+          {
+            "title": "5人团票",
+            "children": [
+              {
+                "title": "优惠价：2050元/天"
+              }
+            ]
+          },
+          {
+            "title": "10人团票",
+            "children": [
+              {
+                "title": "优惠价：5050元/天"
+              }
+            ]
+          },
+          {
+            "title": "30人团票",
+            "children": [
+              {
+                "title": "优惠价：20050元/天"
+              }
+            ]
+          },
+          {
+            "title": "50人团票",
+            "children": [
+              {
+                "title": "优惠价：5050元/天"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "情侣票",
+        "children": [
+          {
+            "title": "1对票",
+            "children": [
+              {
+                "title": "优惠价：848元/天"
+              }
+            ]
+          },
+          {
+            "title": "2对票",
+            "children": [
+              {
+                "title": "优惠价：1500元/天"
+              }
+            ]
+          },
+          {
+            "title": "3对票",
+            "children": [
+              {
+                "title": "优惠价：2500元/天"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

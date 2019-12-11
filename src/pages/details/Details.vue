@@ -34,5 +34,5 @@
 
 <style lang="stylus" scoped>
   .details
-    padding-bottom: 150px
+    padding-bottom: 550px
 </style>

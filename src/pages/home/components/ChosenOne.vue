@@ -2,42 +2,26 @@
   <div class="chosen">
     <div class="chosen-title">
       <a href="#">
-        <img class="chosen-img" src="@/assets/img/chosen/daily-picks.jpg" alt="">
+        <img class="chosen-img" :src="chosenTitleOne" alt="">
       </a>
     </div>
     <div class="chosen-list">
       <ul>
-      	<li v-for="(items, index) of priceList" :key="index">
+      	<li v-for="(items, index) of chosenListOne" :key="index">
           <div class="clearfix">
             <div class="img">
               <a href="#">
-                <img class="chosen-img" src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/739c1321d2a05d48c0b8b86cd459c4d4.jpg?thumb=1&w=360&h=360" alt="344 x 280">
+                <img class="chosen-img" :src="items.url" alt="344 x 280">
               </a>
             </div>
             <div class="desc">
-              <div class="desc-title">{{items[0].title}}</div>
-              <div class="desc-container">{{items[0].desc}}</div>
+              <div class="desc-title">{{items.title}}</div>
+              <div class="desc-container">{{items.desc}}</div>
               <div class="desc-price">
-                {{items[0].price}}
+                {{items.price}}
                 <span>from</span>
-                <span class="original-price"><s>1299</s></span>
+                <span class="original-price"><s>{{items.orig}}</s></span>
               </div>
-            </div>
-          </div>
-          <div class="clearfix">
-            <div class="desc">
-              <div class="desc-title">{{items[1].title}}</div>
-              <div class="desc-container">{{items[1].desc}}</div>
-              <div class="desc-price">
-                {{items[1].price}}
-                <span>from</span>
-                <span class="original-price"><s>1299</s></span>
-              </div>
-            </div>
-            <div class="img">
-              <a href="#">
-                <img class="chosen-img" src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/739c1321d2a05d48c0b8b86cd459c4d4.jpg?thumb=1&w=360&h=360" alt="344 x 280">
-              </a>
             </div>
           </div>
         </li>
@@ -54,45 +38,17 @@
 <script>
   export default {
     name:"Chosen",
-    data (){
-      return {
-        priceList:[
-          [
-            {
-              id:"001",
-              title:"Product Title Name",
-              desc:"Selling Point Description",
-              price:"2400"
-            },
-            {
-              id:"002",
-              title:"Product Title Name",
-              desc:"Selling Point Description",
-              price:"1999"
-            }
-          ],
-          [
-            {
-              id:"003",
-              title:"Product Title Name",
-              desc:"Selling Point Description",
-              price:"999"
-            },
-            {
-              id:"004",
-              title:"Product Title Name",
-              desc:"Selling Point Description",
-              price:"788"
-            }
-          ]
-        ]
-      }
+    props: {
+      chosenTitleOne: String,
+      chosenListOne: Array
     }
   }
 </script>
 
 <style lang="stylus" scoped>
   @import '~@/assets/css/mixins.styl'
+  .chosen .chosen-list ul li:nth-child(odd) > div .img
+    float:right
   .chosen
     .chosen-title
       overflow:hidden
@@ -119,9 +75,10 @@
                 width:100%
             .desc
               box-sizing:border-box
-              padding:76px 20px 0 64px
+              padding:76px 20px 0 32px
               .desc-title
                 font-size:30px
+                elipsis()
               .desc-container
                 font-size:22px
                 margin:10px 0

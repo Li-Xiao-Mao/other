@@ -2,18 +2,18 @@
   <div class="recommend">
     <div class="recommend-left">
       <a href="#">
-        <img class="recommend-img" src="@/assets/img/recommend/recommend01.jpg" alt="358 x 508">
+        <img class="recommend-img" :src="Recommend[0]" alt="358 x 508">
       </a>
     </div>
     <div class="recommend-right">
       <div class="recommend-top">
         <a href="#">
-          <img class="recommend-img" src="@/assets/img/recommend/recommend02.jpg" alt="358 x 252">
+          <img class="recommend-img" :src="Recommend[1]" alt="358 x 252">
         </a>
       </div>
       <div class="recommend-bottom">
         <a href="#">
-          <img class="recommend-img" src="@/assets/img/recommend/recommend03.jpg" alt="358 x 252">
+          <img class="recommend-img" :src="Recommend[2]" alt="358 x 252">
         </a>
       </div>
     </div>
@@ -22,7 +22,10 @@
 
 <script>
   export default {
-    name: "Recommend"
+    name: "Recommend",
+    props: {
+      Recommend: Array
+    },
   }
 </script>
 

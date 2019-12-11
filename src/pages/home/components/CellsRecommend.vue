@@ -1,14 +1,17 @@
 <template>
   <div class="cells-recommend">
     <a href="#">
-      <img class="cells-recommend-img" src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/a56394373382e7d98a395b25c709cfcb.jpg?thumb=1&w=720&h=280" alt="">
+      <img class="cells-recommend-img" :src="cellsRecommend" alt="">
     </a>
   </div>
 </template>
 
 <script>
   export default {
-    name:"CellsRecommend"
+    name:"CellsRecommend",
+    props: {
+      cellsRecommend: String
+    }
   }
 </script>
 

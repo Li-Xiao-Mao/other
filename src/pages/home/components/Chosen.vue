@@ -2,16 +2,16 @@
   <div class="chosen">
     <div class="chosen-title">
       <router-link to="/details">
-        <img class="chosen-img" src="@/assets/img/chosen/daily-picks.jpg" alt="">
+        <img class="chosen-img" :src="chosenTitle" alt="">
       </router-link>
     </div>
     <div class="chosen-list">
       <ul class="clearfix">
-      	<li v-for="items of priceList" :key="items.id">
+      	<li v-for="items of chosenList" :key="items.id">
           <div>
             <div class="img">
               <router-link to="/details">
-                <img class="chosen-img" src="@/assets/img/chosen/01.jpg" alt="344 x 280">
+                <img class="chosen-img" :src="items.url" alt="344 x 280">
               </router-link>
             </div>
             <div class="desc">
@@ -20,7 +20,7 @@
               <div class="desc-price">
                 {{items.price}}
                 <span>from</span>
-                <span class="original-price"><s>1299</s></span>
+                <span class="original-price"><s>{{items.orig}}</s></span>
               </div>
               <div class="desc-buybtn">
                 <router-link to="/details">Buybtn Mauto</router-link>
@@ -41,36 +41,40 @@
 <script>
   export default {
     name:"Chosen",
-    data (){
-      return {
-        priceList:[
-          {
-            id:"001",
-            title:"Product Title Name",
-            desc:"Selling Point Description",
-            price:"2400"
-          },
-          {
-            id:"002",
-            title:"Product Title Name",
-            desc:"Selling Point Description",
-            price:"1299"
-          },
-          {
-            id:"003",
-            title:"Product Title Name",
-            desc:"Selling Point Description",
-            price:"999"
-          },
-          {
-            id:"004",
-            title:"Product Title Name",
-            desc:"Selling Point Description",
-            price:"780"
-          }
-        ]
-      }
+    props: {
+      chosenTitle: String,
+      chosenList: Array
     }
+    // data (){
+    //   return {
+    //     priceList:[
+    //       {
+    //         id:"001",
+    //         title:"Product Title Name",
+    //         desc:"Selling Point Description",
+    //         price:"2400"
+    //       },
+    //       {
+    //         id:"002",
+    //         title:"Product Title Name",
+    //         desc:"Selling Point Description",
+    //         price:"1299"
+    //       },
+    //       {
+    //         id:"003",
+    //         title:"Product Title Name",
+    //         desc:"Selling Point Description",
+    //         price:"999"
+    //       },
+    //       {
+    //         id:"004",
+    //         title:"Product Title Name",
+    //         desc:"Selling Point Description",
+    //         price:"780"
+    //       }
+    //     ]
+    //   }
+    // }
   }
 </script>
 

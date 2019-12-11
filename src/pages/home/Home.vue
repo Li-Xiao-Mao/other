@@ -1,13 +1,21 @@
 <template>
   <div class="home">
     <home-header></home-header>
-    <home-banner :BannerImg="BannerImg"></home-banner>
+    <home-banner :bannerImg="bannerImg"></home-banner>
     <home-sort :SortInfo="SortInfo"></home-sort>
-    <home-recommend></home-recommend>
-    <home-chosen></home-chosen>
+    <home-recommend :Recommend="Recommend"></home-recommend>
+    <home-chosen
+      :chosenTitle="chosenTitle"
+      :chosenList="chosenList"
+    >
+    </home-chosen>
     <!-- <home-new-sort></home-new-sort> -->
-    <home-cells-recommend></home-cells-recommend>
-    <home-chosen-one></home-chosen-one>
+    <home-cells-recommend :cellsRecommend="cellsRecommend"></home-cells-recommend>
+    <home-chosen-one 
+      :chosenTitleOne="chosenTitleOne" 
+      :chosenListOne="chosenListOne"
+    >
+    </home-chosen-one>
   </div>
 </template>
 
@@ -35,21 +43,31 @@
     },
     data () {
       return {
-        BannerImg:[],
-        SortInfo:[]
+        bannerImg: [],
+        Recommend: [],
+        chosenTitle: "",
+        chosenList: [],
+        cellsRecommend: "",
+        chosenTitleOne: "",
+        chosenListOne: []
       }
     },
     methods: {
       getDataInfo () {
-        axios.get("/api/index.json")
-          .then(this.datainfoSuccess)
+        axios.get("/api/home.json")
+          .then(this.getDataInfoSuccess)
       },
-      datainfoSuccess (res) {
-        let Res = res.data;
-        if(Res.ret && res.data){
-          let data = res.data;
-          this.BannerImg = data.BannerImg;
-          this.SortInfo = data.SortList
+      getDataInfoSuccess (res) {
+        res = res.data
+        if(res.ret && res.data){
+          let data = res.data
+          this.bannerImg = data.bannerImg
+          this.Recommend = data.Recommend
+          this.chosenTitle = data.chosenTitle
+          this.chosenList = data.chosenList
+          this.cellsRecommend = data.cellsRecommend
+          this.chosenTitleOne = data.chosenTitleOne
+          this.chosenListOne = data.chosenListOne
         }
       }
     },

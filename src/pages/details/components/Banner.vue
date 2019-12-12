@@ -1,39 +1,32 @@
 <template>
   <div class="banner">
-     <swiper :options="swiperOption">
-        <swiper-slide>
+    <div @click="handleBannerBtn">
+      <swiper :options="swiperOption">
+        <swiper-slide v-for="(items, index) of detailsBanner" :key="index">
           <div>
-            <img class="banner-img" src="@/assets/img/Details/banner/banner01.jpg" alt="">
+            <img class="banner-img" :src="items" alt="">
           </div>
         </swiper-slide>
-        <swiper-slide>
-          <div>
-            <img class="banner-img" src="@/assets/img/Details/banner/banner02.jpg" alt="">
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div>
-            <img class="banner-img" src="@/assets/img/Details/banner/banner03.jpg" alt="">
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div>
-            <img class="banner-img" src="@/assets/img/Details/banner/banner04.jpg" alt="">
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div>
-            <img class="banner-img" src="@/assets/img/Details/banner/banner05.jpg" alt="">
-          </div>
-        </swiper-slide>
-        <div class="swiper-pagination"  slot="pagination"></div>
+        <div class="swiper-pagination" slot="pagination"></div>
       </swiper>
+    </div>
+    <common-gallary v-show="bannerShow" @clos="handleBannerClick" :bannerList="detailsBanner"></common-gallary>
   </div>
 </template>
 
 <script>
+  import CommonGallary from '@/pages/common/gallary/Gallary'
   export default {
     name: "Banner",
+    props: {
+      detailsBanner: {
+        type: Array,
+        default: ["/static/img/details/002/02.jpg","/static/img/details/002/03.jpg"]
+      }
+    },
+    components: {
+      CommonGallary
+    },
     data () {
       return {
         swiperOption:{
@@ -42,10 +35,17 @@
           pagination: {
             el: '.swiper-pagination'
           },
-          autoplay: {
-            
-          }
-        }
+          autoplay: {}
+        },
+        bannerShow: false
+      }
+    },
+    methods: {
+      handleBannerBtn () {
+        this.bannerShow = true
+      },
+      handleBannerClick () {
+        this.bannerShow = false
       }
     }
   }
@@ -55,7 +55,7 @@
   .banner
     width:100%
     height:0
-    overflow:hidden
+    // overflow:hidden
     padding-bottom:109.903382%
     // background:#007BFF
     .banner-img

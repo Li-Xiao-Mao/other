@@ -35,7 +35,7 @@
     left:0
     bottom:20px
     width:100%
-    z-index:100
+    z-index:2
     .footer-nav-btn
       display:flex
       align-items center

@@ -1,7 +1,7 @@
 <template>
   <div class="details">
     <details-nav-btn></details-nav-btn>
-    <details-banner></details-banner>
+    <details-banner :detailsBanner="detailsBanner"></details-banner>
     <!-- <details-activity></details-activity> -->
     <details-base-parameter></details-base-parameter>
     <details-key-parameter></details-key-parameter>
@@ -11,6 +11,7 @@
 </template>
 
 <script>
+  import axios from "axios"
   import DetailsNavBtn from '@/pages/details/components/NavBtn'
   import DetailsBanner from '@/pages/details/components/Banner'
   // import DetailsActivity from '@/pages/details/components/Activity'
@@ -28,6 +29,27 @@
       DetailsKeyParameter,
       DetailsFooter,
       SectionDetail
+    },
+    data () {
+      return {
+        detailsBanner: []
+      }
+    },
+    methods: {
+      getDataInfo () {
+        axios.get("/api/details.json")
+        .then(this.getDataInfoSuccess)
+      },
+      getDataInfoSuccess (res) {
+        res = res.data
+        if(res.ret && res.data){
+          let data = res.data
+          this.detailsBanner = data.detailsBanner
+        }
+      }
+    },
+    mounted () {
+      this.getDataInfo()
     }
   }
 </script>

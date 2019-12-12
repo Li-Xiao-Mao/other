@@ -1,0 +1,9 @@
+{
+  "ret":true,
+  "data":{
+    "detailsBanner":[
+      "/static/img/details/002/02.jpg",
+      "/static/img/details/002/03.jpg"
+    ]
+  }
+}
